@@ -1,29 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Linsong Wang</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <head>
+    <title>Mini Assignment 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* 
+  the demo change the default margin/padding of body element. 
+  but this is not stated in the doc description.
+  better explain more or update the demo there
+*/
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-/* Header/Logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #b1818a;
-  color: white;
-  font-size: 30px;
-}
+      .header {
+        padding: 20px;
+        text-align: center;
+        background: #b1818a;
+        color: white;
+        font-size: 30px;
+        top: 0;
+        position: sticky;
+      }
 
-/* Page Content */
-.content {padding:20px;}
-</style>
-</head>
-<body>
+      .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: horizontal;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background: white;
+        flex-wrap: wrap;
+        flex-grow: 3;
+      }
 
-<div class="header">
-  <h1>Header</h1>
-</div>
+      .box {
+        height: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: calc((100% - 30%) / 3);
+        min-width: calc((100% - 30%) / 3);
+        max-width: calc((100% - 30%) / 3);
+      }
 
-</body>
+      #red-box {
+        background-color: red;
+      }
+
+      #blue-box {
+        background-color: blue;
+      }
+
+      #green-box {
+        background-color: green;
+      }
+
+      .table-content {
+        border: 1px solid black;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+      }
+
+      th,
+      td {
+        padding: 1%;
+        text-align: left;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">
+        <h1>Linsong Wang</h1>
+      </div>
+
+      <div class="flex-container">
+        <!-- start line number  -->
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <div id="blue-box" class="box"></div>
+        <div id="green-box" class="box"></div>
+        <div id="red-box" class="box"></div>
+        <!-- end line number -->
+      </div>
+
+      <!-- This table is for personal information -->
+      <table class="table-content">
+        <caption>
+          Personal Information
+        </caption>
+        <tr>
+          <th>email</th>
+          <td>wang.lins@northeastern.edu</td>
+        </tr>
+        <tr>
+          <th>linkedin</th>
+          <td>https://www.linkedin.com/in/linsong-wang/</td>
+        </tr>
+        <tr>
+          <th>github</th>
+          <td>https://github.com/SunnyScenery</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
