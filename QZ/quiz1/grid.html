@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quiz 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .wrapper {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+
+      .grid-container {
+        width: 60%;
+        display: grid;
+        grid-template-areas:
+          "grid1 grid2 grid2"
+          "grid1 grid5 grid3"
+          "grid4 grid4 grid3";
+        grid-gap: 10px;
+      }
+
+      .grid-element {
+        background-color: green;
+        border: 3px solid black;
+      }
+
+      #grid1 {
+        aspect-ratio: 1 / 2.1;
+        grid-area: grid1;
+      }
+
+      #grid2 {
+        aspect-ratio: 2.1 / 1;
+        grid-area: grid2;
+      }
+
+      #grid3 {
+        aspect-ratio: 1 / 2.1;
+        grid-area: grid3;
+      }
+
+      #grid4 {
+        aspect-ratio: 2.1 / 1;
+        grid-area: grid4;
+      }
+
+      #grid5 {
+        aspect-ratio: 1 / 1;
+        grid-area: grid5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="grid-container">
+        <div id="grid1" class="grid-element"></div>
+        <div id="grid2" class="grid-element"></div>
+        <div id="grid3" class="grid-element"></div>
+        <div id="grid4" class="grid-element"></div>
+        <div id="grid5" class="grid-element"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>EC 2</title>
+    <title>Mini Assignment 3</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        
+      @media screen and (max-width: 600px) {
+        div.square {
+          border: 0px;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .square {
+        height: 25%;
+        width: 25%;
+        background-color: red;
+        border: 5px solid purple;
+        margin: 10px;
+      }
+
+      .square:hover {
+        background-color: green;
+      }
     </style>
   </head>
   <body>
-
+    <div class="wrapper">
+      <div class="square">1</div>
+      <div class="square">2</div>
+      <div class="square">3</div>
+    </div>
   </body>
 </html>
