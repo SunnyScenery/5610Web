@@ -5,47 +5,72 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./src/css/home.css" />
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/contact.css" />
+  <title>Linsong's Portfolio</title>
 </head>
 
 <body>
-  <nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">MUO</div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">@linsong</div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+        
+                <li><a href="../homepage/">Home</a></li>
+                <li><a href="../experience/">Experience</a></li>
+        
+                <li class="photos">
+                  <a href="../photos/">Photos</a>
+                </li>
+                <li><a id="current-page" href="../contact/">Contact</a></li>
+              </div>
+            </ul>
+          </nav>
+    </div>
+  
 
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-
-      <!-- USING CHECKBOX HACK -->
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
-
-        <li><a href="">Home</a></li>
-        <li><a href="/contact">111About</a></li>
-
-        <li class="services">
-          <a href="/">Services</a>
-
-          <!-- DROPDOWN MENU -->
-          <ul class="dropdown">
-            <li><a href="/">Dropdown 1 </a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 3</a></li>
-            <li><a href="/">Dropdown 4</a></li>
-          </ul>
-
-        </li>
-
-        <li><a href="/">Pricing</a></li>
-        <li><a href="/">Contact</a></li>
+  <main class="main-container">
+    <section id="contact-section">
+      <div class="contact-title">
+        <h2>Contact</h2>
       </div>
-    </ul>
-  </nav>
+
+      <table class="contact-table"> <!-- contact table -->
+        <tr>
+          <th>
+            <a href="https://www.linkedin.com/in/linsong-wang/">
+              <img src="../src/images/linkedin_icon.svg" alt="linkedin icon" class="contact-icon" />
+            </a>
+          </th>
+          <td><a href="https://www.linkedin.com/in/linsong-wang/">@linsong wang</a></td>
+        </tr>
+        <tr>
+          <th><a href="https://github.com/SunnyScenery"><img src="../src/images/github_icon.svg" alt="github icon" class="contact-icon" /></a></th>
+          <td><a href="https://github.com/SunnyScenery">@sunnyscenery</a></td>
+        </tr>
+        <tr>
+          <th><a href="https://www.instagram.com/linsong.wang/"><img src="../src/images/instagram_icon.svg" alt="instagram icon" class="contact-icon" /></a></th>
+          <td><a href="https://www.instagram.com/linsong.wang/">@linsong.wang</a></td>
+        </tr>
+        <tr>
+          <th><a href="mailto:wang.lins@northeastern.edu"><img src="../src/images/gmail_icon.svg" alt="gmail icon" class="contact-icon" /></a></th>
+          <td><a href="mailto:wang.lins@northeastern.edu">@wang.lins@northeastern.edu</a></td>
+        </tr>
+      </table>
+    
+    </section>
+  </main>
 </body>
 
 </html>

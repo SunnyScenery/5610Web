@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/style.css" />
+  <link rel="stylesheet" href="../src/css/home.css" />
+  <title>Linsong's Portfolio</title>
+</head>
+
+<body>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">@linsong</div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+        
+                <li><a id="current-page" href="../homepage/">Home</a></li>
+                <li><a href="../experience/">Experience</a></li>
+        
+                <li class="photos">
+                  <a href="../photos/">Photos</a>
+    
+                </li>
+                <li><a href="../contact/">Contact</a></li>
+              </div>
+            </ul>
+          </nav>
+    </div>
+  
+
+  <main class="main-container">
+    <section id="home-section">
+        <div class="home-title">
+            <h2>about <span class="color-4">@linsong</span></h2>
+        </div>
+        <p class="home-description">
+            I am a student at the Northeastern University, majoring in Computer Science. 
+            In my old days I was doing research for computer vision, deep learning and high performance computing.
+            After multiple internships, I decided to now devoted myself to the industry of software engineering.
+        </p>
+        <div class="content-container">
+            <div class="homepage-image-container">
+                <img src="../src/images/homepage-photo.jpg" alt="homepage photo" class="homepage-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="education-section">
+        
+        <div class="content-container">
+          <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-title">
+                  <img src="../src/images/NEU_logo.png" alt="NEU logo" class="education-logo">
+                    <h4>Northeastern University</h4>
+                    <p>Master of Science in Computer Science</p>
+                    <p>September 2021 - Present</p>
+                </div>
+                <div class="education-title">
+                  <img src="../src/images/ucsd_logo.png" alt="ucsd logo" class="education-logo">
+                  <h4>University of California, San Diego</h4>
+                  <p>Exchange Program in Computer Science</p>
+                  <p>September 2018 - March 2019</p>
+              </div>
+                <div class="education-title">
+                  <img src="../src/images/seu_logo.png" alt="seu logo" class="education-logo">
+                  <h4>Southeast University</h4>
+                  <p>Bachelor of Science in Computer Science</p>
+                  <p>September 2016 - June 2020</p>
+              </div>
+
+            </div>
+    </section>
+  </main>
+</body>
+
+</html>

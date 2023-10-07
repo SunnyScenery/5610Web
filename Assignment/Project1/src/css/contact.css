@@ -1,0 +1,50 @@
+.contact-table {
+    margin: 50px auto 0 auto;
+    width: fit-content;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.contact-table th, .contact-table td {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Fira Mono", monospace;
+}
+
+.contact-table td {
+    padding-left: 30px;
+}
+
+.contact-icon {
+    margin: 15px 15px 15px 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.contact-table th:hover, .contact-table td:hover {
+    cursor: pointer;
+    color: #e76f51;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .contact-table td {
+        padding: 0;
+        font-size: 12px;
+    }
+}
