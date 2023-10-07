@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/experience.css" />
+    <title>Linsong's Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-  <link rel="stylesheet" href="../src/css/style.css" />
-  <link rel="stylesheet" href="../src/css/experience.css" />
-  <title>Linsong's Portfolio</title>
-</head>
-
-<body>
+  <body>
     <div class="navbar-container">
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo">@linsong</div>
-        
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-        
-              <!-- USING CHECKBOX HACK -->
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-        
-                <li><a href="../homepage/">Home</a></li>
-                <li><a id="current-page" href="../experience/">Experience</a></li>
-        
-                <li class="photos">
-                  <a href="../photos/">Photos</a>
-                </li>
-                <li><a href="../contact/">Contact</a></li>
-              </div>
-            </ul>
-          </nav>
-    </div>
-  
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">@linsong</div>
 
-  <main class="main-container">
-    <section id="experience-section">
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="../homepage/">Home</a></li>
+            <li><a id="current-page" href="../experience/">Experience</a></li>
+
+            <li class="photos">
+              <a href="../photos/">Photos</a>
+            </li>
+            <li><a href="../contact/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main-container">
+      <section id="experience-section">
         <h2>Experience</h2>
         <div class="experience-container">
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/aws.png" alt="aws logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/aws.png"
+                alt="aws logo"
+                class="experience-logo"
+              />
               <h4 class="event">Amazon Web Services</h4>
               <p class="title">Software Development Engineer Intern</p>
               <p class="location">Seattle, Washington, United States</p>
@@ -54,48 +57,87 @@
             </div>
             <div class="card-description">
               <ul>
-                <li>Worked in AWS Amplify Backend team to build a Serverless infrastructure using Kinesis Data Stream, Lambda Functions, and CloudWatch.</li>
-                <li>Centralized logs from multiple service accounts across various regions, automating ~2 hours of manual work per week for operational engineers.</li>
-                <li>Enabled new avenues for data analysis by aggregating logs.</li>
-                <li>Successfully deployed the infrastructure in multiple Amazon Pipelines, now actively used for generating weekly reports.</li>
+                <li>
+                  Worked in AWS Amplify Backend team to build a Serverless
+                  infrastructure using Kinesis Data Stream, Lambda Functions,
+                  and CloudWatch.
+                </li>
+                <li>
+                  Centralized logs from multiple service accounts across various
+                  regions, automating ~2 hours of manual work per week for
+                  operational engineers.
+                </li>
+                <li>
+                  Enabled new avenues for data analysis by aggregating logs.
+                </li>
+                <li>
+                  Successfully deployed the infrastructure in multiple Amazon
+                  Pipelines, now actively used for generating weekly reports.
+                </li>
               </ul>
             </div>
           </div>
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/aws.png" alt="aws logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/aws.png"
+                alt="aws logo"
+                class="experience-logo"
+              />
               <h4 class="event">Amazon Web Services</h4>
               <p class="title">Software Development Engineer Intern</p>
               <p class="location">Seattle, Washington, United States</p>
               <p class="date">August 2022 - December 2022</p>
-              
             </div>
             <div class="card-description">
               <ul>
-                <li>Part of AWS Chime SDK team, developed an open-source library using AWS Lambda for managing PSTN Audio Service (SIP Media Application).</li>
-                <li>Achieved an 85% reduction in user code and significantly decreased error rates during the development phase.</li>
+                <li>
+                  Part of AWS Chime SDK team, developed an open-source library
+                  using AWS Lambda for managing PSTN Audio Service (SIP Media
+                  Application).
+                </li>
+                <li>
+                  Achieved an 85% reduction in user code and significantly
+                  decreased error rates during the development phase.
+                </li>
               </ul>
             </div>
           </div>
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/intellipro_logo.png" alt="intellipro logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/intellipro_logo.png"
+                alt="intellipro logo"
+                class="experience-logo"
+              />
               <h4 class="event">IntelliPro</h4>
               <p class="title">Full Stack Engineer Intern</p>
               <p class="location">Santa Clara, California, United States</p>
               <p class="date">May 2022 - August 2022</p>
-              
             </div>
             <div class="card-description">
               <ul>
-                <li>Built the livestream function for an online shopping website using ReactJS and NodeJs with WebRTC and Socket.IO, achieved a 500 ms delay and a high volume using SFU.</li>
-                <li>Built a microservice for integration with Salesforce, Hubspot and Shopify. Implemented all with RESTful APIs with Spring Boot and Sprint Cloud, added a load balancer with Eureka, deployed with Docker and Kubernetes.</li>
+                <li>
+                  Built the livestream function for an online shopping website
+                  using ReactJS and NodeJs with WebRTC and Socket.IO, achieved a
+                  500 ms delay and a high volume using SFU.
+                </li>
+                <li>
+                  Built a microservice for integration with Salesforce, Hubspot
+                  and Shopify. Implemented all with RESTful APIs with Spring
+                  Boot and Sprint Cloud, added a load balancer with Eureka,
+                  deployed with Docker and Kubernetes.
+                </li>
               </ul>
             </div>
           </div>
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/geekplus_logo.png" alt="geekplus logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/geekplus_logo.png"
+                alt="geekplus logo"
+                class="experience-logo"
+              />
               <h4 class="event">Geek+</h4>
               <p class="title">Algorithm Intern</p>
               <p class="location">Beijing, China</p>
@@ -103,47 +145,80 @@
             </div>
             <div class="card-description">
               <ul>
-                <li>Optimized A* algorithm variants to address distributed multi-agent pathfinding problems in a warehouse setting using Java.</li>
-                <li>Supported an online competition by developing server-side baseline algorithms for multi-agent pathfinding using Python, Google Protocol Buffers, and gRPC.</li>
+                <li>
+                  Optimized A* algorithm variants to address distributed
+                  multi-agent pathfinding problems in a warehouse setting using
+                  Java.
+                </li>
+                <li>
+                  Supported an online competition by developing server-side
+                  baseline algorithms for multi-agent pathfinding using Python,
+                  Google Protocol Buffers, and gRPC.
+                </li>
               </ul>
             </div>
           </div>
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/megvii_logo_trans.png" alt="megvii logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/megvii_logo_trans.png"
+                alt="megvii logo"
+                class="experience-logo"
+              />
               <h4 class="event">MEGVII</h4>
               <p class="title">Research Intern</p>
               <p class="location">Nanjing, Jiangsu, China</p>
               <p class="date">July 2019 - May 2020</p>
-              
             </div>
             <div class="card-description">
               <ul>
-                <li>Worked on unmanned supermarket program, performed experiments on image retrieval task
-                  through loss function, backbone, metric learning architecture and other parts such as redundancy reduction in real industry dataset to improve model iteration speed and achieved 95% accuracy after deploying models into devices.</li>
+                <li>
+                  Worked on unmanned supermarket program, performed experiments
+                  on image retrieval task through loss function, backbone,
+                  metric learning architecture and other parts such as
+                  redundancy reduction in real industry dataset to improve model
+                  iteration speed and achieved 95% accuracy after deploying
+                  models into devices.
+                </li>
               </ul>
             </div>
           </div>
           <div class="experience-card">
             <div class="card-title">
-              <img src="../src/images/experience/asc_logo.jpeg" alt="asc logo" class="experience-logo"/>
+              <img
+                src="../src/images/experience/asc_logo.jpeg"
+                alt="asc logo"
+                class="experience-logo"
+              />
               <h4 class="event">ASC18 Asian Student Supercomputer Challenge</h4>
               <p class="title">First Prize in ASC18</p>
               <p class="location">Nanchang, Jiangxi, China</p>
               <p class="date">May 2018</p>
-              
             </div>
             <div class="card-description">
               <ul>
-                <li>Aimed to complete the construction of the computational cluster for the purpose of High Performance Computing and to optimize the topics in the preliminary and finals of the competition on behalf of Southeast University</li>
-                <li>Conducted parallel optimization of the two CPU application CFL3D (for Fluid mechanics) and SIESTA (for computational chemistry) and optimization of the GPU application RELION (for cryogenic electron microscopy, Nobel Prize for Chemistry, 2017) with OpenMP, Fortran, CUDA</li>
-                <li>Assisted the team in building a cluster for High Performance Computing</li>
+                <li>
+                  Aimed to complete the construction of the computational
+                  cluster for the purpose of High Performance Computing and to
+                  optimize the topics in the preliminary and finals of the
+                  competition on behalf of Southeast University
+                </li>
+                <li>
+                  Conducted parallel optimization of the two CPU application
+                  CFL3D (for Fluid mechanics) and SIESTA (for computational
+                  chemistry) and optimization of the GPU application RELION (for
+                  cryogenic electron microscopy, Nobel Prize for Chemistry,
+                  2017) with OpenMP, Fortran, CUDA
+                </li>
+                <li>
+                  Assisted the team in building a cluster for High Performance
+                  Computing
+                </li>
               </ul>
             </div>
           </div>
         </div>
-    </section>
-  </main>
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
